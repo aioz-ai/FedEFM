@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Guide3D: A Bi-planar X-ray Dataset for 3D Shape Reconstruction.">
+  <meta name="keywords" content="X-ray, 3D Shape Reconstruction">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide3D: A Bi-planar X-ray Dataset for 3D Shape Reconstruction</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/aioz.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Guide3D: A Bi-planar X-ray Dataset for 3D Shape Reconstruction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Tudor Jianu</a><sup>1</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Baoru Huang</a><sup>2</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Hoan Nguyen</a><sup>3</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Binod Bhattarai</a><sup>4</sup>,
+            </span>
+			<span class="author-block">
+              <a href="https://scholar.google.com/citations?user=qCcSKkMAAAAJ&hl=en">Tuong Do</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sg.linkedin.com/in/erman-tjiputra">Erman Tjiputra</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=DbAThEgAAAAJ&hl=en">Quang D. Tran</a><sup>5</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Pierre Berthet-Rayne</a><sup>1</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Ngan Le</a><sup>6</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Sebastiano Fichera</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cgi.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a><sup>1</sup>,
+            </span>
+          </div>
+      <!--/ Intro Image. -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup><b>University of Liverpool, UK</b></span><br />
+			<span class="author-block"><sup>2</sup><b>Imperial College London, UK</b></span><br />
+			<span class="author-block"><sup>3</sup><b>University of Information Technology - VNUHCM, VN</b></span><br />
+			<span class="author-block"><sup>4</sup><b>University of Aberdeen, UK</b></span><br />
+            <span class="author-block"><sup>5</sup><b>AIOZ, Singapore</b></span><br />
+			<span class="author-block"><sup>6</sup><b>University of Arkansas, USA</b></span>
+          </div>
+	<div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="static/figures/Intro.png" alt="cars peace"/>
+		<div class="content has-text-justified">
+			Setup Materials: a) Overall setup & endovascular phantom, b) Radifocus (angled) guidewire. and c) Nitrex (straight) guidewire.
+		</div>
+      </div>
+    </div>
+          <div class=" is-centered has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. 
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset (Coming soon)</span>
+                  </a>
+              </span> 
+              <!-- Video. -->
+              <!--<span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>-->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+		<div class="column is-four-fifths">
+			<h2 class="title is-3">Abstract</h2>
+				<div class="content has-text-justified">
+					Endovascular surgical tool reconstruction represents an important factor in advancing endovascular tool navigation, which is an important step in endovascular surgery. However, the lack of publicly available datasets significantly restricts the development and validation of novel machine learning approaches. Moreover, due to the need for specialized equipment such as biplanar scanners, most of the previous research employs monoplanar fluoroscopic technologies, hence only capturing the data from a single view and significantly limiting the reconstruction accuracy. To bridge this gap, we introduce Guide3D, a bi-planar X-ray dataset for 3D reconstruction. The dataset represents a collection of high resolution bi-planar, manually annotated fluoroscopic videos, captured in real-world settings. Validating our dataset within a simulated environment reflective of clinical settings confirms its applicability for real-world applications. Furthermore, we propose a new benchmark for guidewrite shape prediction, serving as a strong baseline for future work.  Guide3D not only addresses an essential need by offering a platform for advancing segmentation and 3D reconstruction techniques but also aids the development of more accurate and efficient endovascular surgery interventions.   
+				</div>
+		</div>
+    </div>
+    
+	<section class="section">
+      <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
+				<div class="publication-video">
+					<video src="static/figures/Demo.mp4" type="video/mp4" controls></video>
+				</div>
+			</div>
+        </div>   
+    </section> 
+	
+	<section class="section">
+		<div class="container ">
+        <!-- Dataset. -->
+        <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title">Dataset Description</h2>
+            <div class="content has-text-justified">
+               Dataset Overview: Guide3D contains manually annotated frames from two views for 3D reconstruction (left), from which the reconstruction is derived (right).
+			</div>
+			<div class="publication-video">
+				<img src="static/figures/Data.png" alt="cars peace"/>
+			</div>
+			<div class="content has-text-justified">
+               The dataset includes 3,664 instances of angled guidewires with fluid and 484 without, while straight guidewires are represented by 2,472 instances with fluid and 2,126 without. This distribution reflects a variety of procedural contexts. All 8,746 images in the dataset are accompanied by manual segmentation ground truth, facilitating the development of algorithms that require segmentation maps as reference data.
+			</div>
+			<table style="width:100%">
+				<tr>
+				<th>Sample Type</th>
+				<th>Radifocus Guidewire (Angled)</th>
+				<th>Nitrex Guidewire (Straight)</th>
+				<th>Total</th>
+				</tr>
+				<tr>
+				<td>w fluid </td>
+				<td>3,664</td>
+				<td>484</td>
+				<td>4,148</td>
+				</tr>
+				<tr>
+				<td>w/o fluid</td>
+				<td>2,472</td>
+				<td>2,126</td>
+				<td>4,598</td>
+				</tr>
+				<tr>
+				<td>Total</td>
+				<td>6,136</td>
+				<td>2,610</td>
+				<td>8,746</td>
+				</tr>
+			</table>
+			
+			</div>
+          
+        </div>
+      </div>
+	</section>
+	
+	<section class="section">
+		<div class="container ">
+        <!-- Dataset. -->
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<h2 class="title">Method</h2>
+					<div class="content has-text-justified">
+						The figure illustrates the essential components of the proposed model. a) Spherical coordinates are used to predict the guidewire shape. b) The model predicts the 3D shape of a guidewire from image sequences. A Vision Transformer (ViT) extracts spatial features, which a Gated Recurrent Unit (GRU) processes to capture temporal dependencies, producing hidden states. The final hidden state drives three prediction heads: the Tip Prediction Head for the 3D tip position, the Spherical Offset Prediction Head for coordinate offsets, and the Stop Prediction Head for terminal point probability.
+					</div>
+					<div class="publication-video">
+						<img src="static/figures/baseline.png" alt="cars peace"/>
+					</div>
+					
+				</div> 
+			</div>
+		</div>
+	</section>
+	
+ 
+    <section class="section" id="BibTeX">
+		<div class="container is-max-desktop content">
+			<h2 class="title">BibTeX</h2>
+			<pre><code>Soon
+			</code></pre>
+		</div>
+    </section>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template was borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We would like to thank Keunhong Park for sharing the template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
