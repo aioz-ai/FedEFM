@@ -1,3 +1,3 @@
-This is the repo for the landing page of paper: Guide3D A Bi-planar X-ray Dataset for 3D Shape Reconstruction
+This is the repo for the landing page of paper: FedEFM: Federated Endovascular Foundation Model with Unseen Data
 
-🌟 Stay tuned for more information and join us at ACCV 2024.
+🌟 Stay tuned for more information and join us at ICRA 2025.
