@@ -6,7 +6,7 @@
         content="Guide3D: A Bi-planar X-ray Dataset for 3D Shape Reconstruction.">
   <meta name="keywords" content="X-ray, 3D Shape Reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guide3D: A Bi-planar X-ray Dataset for 3D Shape Reconstruction</title>
+  <title>FedEFM: Federated Endovascular Foundation Model with Unseen Data</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -33,37 +33,34 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Guide3D: A Bi-planar X-ray Dataset for 3D Shape Reconstruction</h1>
+          <h1 class="title is-1 publication-title">FedEFM: Federated Endovascular Foundation Model with Unseen Data</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="">Tudor Jianu</a><sup>1</sup>,
+			<span class="author-block">
+              <a href="https://scholar.google.com/citations?user=qCcSKkMAAAAJ&hl=en">Tuong Do</a><sup>1,2,*</sup>,
             </span>
 			<span class="author-block">
-              <a href="">Baoru Huang</a><sup>2</sup>,
-            </span>
-			<span class="author-block">
-              <a href="">Hoan Nguyen</a><sup>3</sup>,
-            </span>
-			<span class="author-block">
-              <a href="">Binod Bhattarai</a><sup>4</sup>,
-            </span>
-			<span class="author-block">
-              <a href="https://scholar.google.com/citations?user=qCcSKkMAAAAJ&hl=en">Tuong Do</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/nghiavuhuu/">Nghia Vu</a><sup>2,*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://sg.linkedin.com/in/erman-tjiputra">Erman Tjiputra</a><sup>5</sup>,
+              <a href="https://scholar.google.com/citations?user=DYV6ztgAAAAJ&hl=en">Tudor Jianu</a><sup>2</sup>,
+            </span>
+			            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=unbPvWAAAAAJ&hl=zh-CN">Baoru Huang</a><sup>1</sup>,
+            </span>
+			            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=qyExc4QAAAAJ&hl=en">Minh Vu</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=DbAThEgAAAAJ&hl=en">Quang D. Tran</a><sup>5</sup>,
+              <a href="https://scholar.xjtlu.edu.cn/en/persons/JionglongSu">Jionglong Su</a><sup>4</sup>,
             </span>
 			<span class="author-block">
-              <a href="">Pierre Berthet-Rayne</a><sup>1</sup>,
+              <a href="https://sg.linkedin.com/in/erman-tjiputra">Erman Tjiputra</a><sup>2</sup>,
             </span>
 			<span class="author-block">
-              <a href="">Ngan Le</a><sup>6</sup>,
+              <a href="https://scholar.google.com/citations?user=DbAThEgAAAAJ&hl=en">Quang D. Tran</a><sup>1,2</sup>,
             </span>
 			<span class="author-block">
-              <a href="">Sebastiano Fichera</a><sup>1</sup>,
+              <a href="https://scholar.google.com.tw/citations?user=rkhWIKoAAAAJ&hl=zh-TW">Te-Chuan Chiu</a><sup>5</sup>,
             </span>
             <span class="author-block">
               <a href="https://cgi.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a><sup>1</sup>,
@@ -72,20 +69,13 @@
       <!--/ Intro Image. -->
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup><b>University of Liverpool, UK</b></span><br />
-			<span class="author-block"><sup>2</sup><b>Imperial College London, UK</b></span><br />
-			<span class="author-block"><sup>3</sup><b>University of Information Technology - VNUHCM, VN</b></span><br />
-			<span class="author-block"><sup>4</sup><b>University of Aberdeen, UK</b></span><br />
-            <span class="author-block"><sup>5</sup><b>AIOZ, Singapore</b></span><br />
-			<span class="author-block"><sup>6</sup><b>University of Arkansas, USA</b></span>
+			<span class="author-block"><sup>2</sup><b>AIOZ, Singapore</b></span><br />
+			<span class="author-block"><sup>3</sup><b>Automation & Control Institute, TU Wien, Austria</b></span><br />
+			<span class="author-block"><sup>4</sup><b>Xi'an Jiaotong-Liverpool University, China</b></span><br />
+            <span class="author-block"><sup>5</sup><b>National Tsing Hua University, Taiwan</b></span><br />
+			<span class="author-block"><sup>*</sup><b>These authors contributed equally to this work.</b></span><br />
           </div>
-	<div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <img src="static/figures/Intro.png" alt="cars peace"/>
-		<div class="content has-text-justified">
-			Setup Materials: a) Overall setup & endovascular phantom, b) Radifocus (angled) guidewire. and c) Nitrex (straight) guidewire.
-		</div>
-      </div>
-    </div>
+
           <div class=" is-centered has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -152,63 +142,94 @@
 		<div class="column is-four-fifths">
 			<h2 class="title is-3">Abstract</h2>
 				<div class="content has-text-justified">
-					Endovascular surgical tool reconstruction represents an important factor in advancing endovascular tool navigation, which is an important step in endovascular surgery. However, the lack of publicly available datasets significantly restricts the development and validation of novel machine learning approaches. Moreover, due to the need for specialized equipment such as biplanar scanners, most of the previous research employs monoplanar fluoroscopic technologies, hence only capturing the data from a single view and significantly limiting the reconstruction accuracy. To bridge this gap, we introduce Guide3D, a bi-planar X-ray dataset for 3D reconstruction. The dataset represents a collection of high resolution bi-planar, manually annotated fluoroscopic videos, captured in real-world settings. Validating our dataset within a simulated environment reflective of clinical settings confirms its applicability for real-world applications. Furthermore, we propose a new benchmark for guidewrite shape prediction, serving as a strong baseline for future work.  Guide3D not only addresses an essential need by offering a platform for advancing segmentation and 3D reconstruction techniques but also aids the development of more accurate and efficient endovascular surgery interventions.   
+					In endovascular surgery, the precise identification of catheters and guidewires in X-ray images is essential for reducing intervention risks. However, accurately segmenting catheter and guidewire structures is challenging due to the limited availability of labeled data. Foundation models offer a promising solution by enabling the collection of similar-domain data to train models whose weights can be fine-tuned for downstream tasks. Nonetheless, large-scale data collection for training is constrained by the necessity of maintaining patient privacy. This paper proposes a new method to train a foundation model in a decentralized federated learning setting for endovascular intervention. To ensure the feasibility of the training, we tackle the unseen data issue using differentiable Earth Mover's Distance within a knowledge distillation framework. Once trained, our foundation model's weights provide valuable initialization for downstream tasks, thereby enhancing task-specific performance. Intensive experiments show that our approach achieves new state-of-the-art results, contributing to advancements in endovascular intervention and robotic-assisted endovascular surgery, while addressing the critical issue of data sharing in the medical domain.   
 				</div>
 		</div>
     </div>
     
-	<section class="section">
-      <!-- Paper video. -->
-        <div class="columns is-centered has-text-centered">
-			<div class="column is-four-fifths">
-				<div class="publication-video">
-					<video src="static/figures/Demo.mp4" type="video/mp4" controls></video>
-				</div>
-			</div>
-        </div>   
-    </section> 
+
 	
 	<section class="section">
 		<div class="container ">
         <!-- Dataset. -->
         <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-            <h2 class="title">Dataset Description</h2>
+            <h2 class="title">Robotic Setup.</h2>
             <div class="content has-text-justified">
-               Dataset Overview: Guide3D contains manually annotated frames from two views for 3D reconstruction (left), from which the reconstruction is derived (right).
+              To collect large-scale X-ray images, we employ a robotic platform and a full-size silicon phantom. A surgeon uses a master device joystick to control a follower robot for cannulating three arteries: the left subclavian (LSA), left common carotid (LCCA), and right common carotid (RCCA). The provided video shows an overview of our robotics setup and the data collecting progress. During each catheterization procedure, the surgeon activates the X-ray fluoroscopy using a pedal in the operating room. The experiments are conducted using the Epsilon X-ray Generator. We develop a real-time image grabber to transmit the video feed of the surgical scene to a workstation, a computer-based device equipped with an 8-Core ARM v8.2 64-bit CPU. Overall, we collect and label 4,700 new X-ray images to create our EIPhantom dataset.
 			</div>
+				<section class="section">
+				  <!-- Paper video. -->
+					<div class="columns is-centered has-text-centered">
+						<div class="column is-four-fifths">
+							<div class="publication-video">
+								<video src="static/figures/Demo.mp4" type="video/mp4" controls></video>
+							</div>
+						</div>
+					</div>   
+				</section> 
+			<h2 class="title">Simulation Data.</h2>
+            <div class="content has-text-justified">
+              Apart from X-ray images collected from our real robot, we also collect an EISimulation dataset from the CathSim simulator for simulated X-ray images. We manually label both data from the robot and CathSim simulator to use them in downstream tasks. We note that the datasets used to train the foundation model are not being used in downstream endovascular understanding tasks. 
+			</div>
+			
 			<div class="publication-video">
-				<img src="static/figures/Data.png" alt="cars peace"/>
+				<img src="static/figures/dataView.png" alt="cars peace"/>
 			</div>
 			<div class="content has-text-justified">
-               The dataset includes 3,664 instances of angled guidewires with fluid and 484 without, while straight guidewires are represented by 2,472 instances with fluid and 2,126 without. This distribution reflects a variety of procedural contexts. All 8,746 images in the dataset are accompanied by manual segmentation ground truth, facilitating the development of algorithms that require segmentation maps as reference data.
+               Table below summarises datasets related to endovascular intervention we use in this paper. All datasets cover different endovascular procedures with X-ray images as the main modality. The data are collected from diverse sources, including human/animal studies, human phantoms, and simulated environments.
 			</div>
-			<table style="width:100%">
-				<tr>
-				<th>Sample Type</th>
-				<th>Radifocus Guidewire (Angled)</th>
-				<th>Nitrex Guidewire (Straight)</th>
-				<th>Total</th>
-				</tr>
-				<tr>
-				<td>w fluid </td>
-				<td>3,664</td>
-				<td>484</td>
-				<td>4,148</td>
-				</tr>
-				<tr>
-				<td>w/o fluid</td>
-				<td>2,472</td>
-				<td>2,126</td>
-				<td>4,598</td>
-				</tr>
-				<tr>
-				<td>Total</td>
-				<td>6,136</td>
-				<td>2,610</td>
-				<td>8,746</td>
-				</tr>
-			</table>
+			<table border="1" cellspacing="0" cellpadding="5">
+    <caption><strong>X-ray datasets used in our experiments.</strong></caption>
+    <thead>
+        <tr style="background-color: #EFEFEF;">
+            <th>Phase</th>
+            <th>Dataset</th>
+            <th>#Frames</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="5">Federated Foundation Training</td>
+            <td>CathAction <cite>[Huang et al., 2024]</cite></td>
+            <td>500,000</td>
+        </tr>
+        <tr style="background-color: #EFEFEF;">
+            <td>VESSEL12 <cite>[Rudyanto et al., 2014]</cite></td>
+            <td>12,892</td>
+        </tr>
+        <tr>
+            <td>Drive <cite>[Staal et al., 2004]</cite></td>
+            <td>8,028</td>
+        </tr>
+        <tr style="background-color: #EFEFEF;">
+            <td>SenNet <cite>[Walsh et al., 2021]</cite></td>
+            <td>7,436</td>
+        </tr>
+        <tr>
+            <td>Medical Decathlon <cite>[Antonelli et al., 2022]</cite></td>
+            <td>442</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Downstream Fine-tuning</td>
+            <td>EISimulation (ours)</td>
+            <td>1,683</td>
+        </tr>
+        <tr style="background-color: #EFEFEF;">
+            <td>EIPhantom (ours)</td>
+            <td>4,710</td>
+        </tr>
+        <tr>
+            <td>RANZCR <cite>[Hansen et al., 2021]</cite></td>
+            <td>33,664</td>
+        </tr>
+        <tr style="background-color: #EFEFEF;">
+            <td>CathAnimal <cite>[Kongtongvattana et al., 2023]</cite></td>
+            <td>25,000</td>
+        </tr>
+    </tbody>
+</table>
+
 			
 			</div>
           
@@ -221,16 +242,75 @@
         <!-- Dataset. -->
 			<div class="columns is-centered has-text-centered">
 				<div class="column is-four-fifths">
-					<h2 class="title">Method</h2>
+					<h2 class="title">Unseen Data Issue</h2>
 					<div class="content has-text-justified">
-						The figure illustrates the essential components of the proposed model. a) Spherical coordinates are used to predict the guidewire shape. b) The model predicts the 3D shape of a guidewire from image sequences. A Vision Transformer (ViT) extracts spatial features, which a Gated Recurrent Unit (GRU) processes to capture temporal dependencies, producing hidden states. The final hidden state drives three prediction heads: the Tip Prediction Head for the 3D tip position, the Spherical Offset Prediction Head for coordinate offsets, and the Stop Prediction Head for terminal point probability.
+						We aim to train a federated foundation model for endovascular intervention with all possible types of X-ray data. In practice, each silo (hospital) retains certain data sources that may not be available at other hospitals. The issue arises from the dissimilarity in data corpora across hospitals, i.e., some data are available in one hospital but not in others. Figure below shows an illustration of this problem. Consequently, this leads to the unseen data issue that needs to be addressed to ensure the feasibility of the federated training process.
 					</div>
 					<div class="publication-video">
-						<img src="static/figures/baseline.png" alt="cars peace"/>
+					<embed src="static/figures/Issue1.pdf" width="500" height="375" >
 					</div>
-					
 				</div> 
 			</div>
+			
+			<div class="columns is-centered">
+				<div class="column is-four-fifths">
+					<h2 class="title">Algorithm: Federated Knowledge Distillation with Earth Mover’s Distance</h2>
+					We propose Algorithm below for training a foundation model within a decentralized federated learning process, effectively addressing the issue of the unseen data problem. 
+				<head>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #d73a49;
+        }
+        .comment {
+            color: #6a737d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+<span class="keyword">Input:</span> Initial weight θᵢ(0) for each silo i; Maximum training round K.
+
+<span class="keyword">for</span> k = 0 to K - 1 <span class="keyword">do</span>
+    <span class="comment">// The loop below runs in parallel</span>
+    <span class="keyword">for each</span> silo i <span class="keyword">do</span>
+        𝒩(i) ← List of i-th neighbour nodes.
+        
+        ξᵢ(k) ← Sampling data from local silo i
+
+        <span class="keyword">for each</span> silo j ∈ 𝒩(i) <span class="keyword">do</span>
+            ξⱼ(k) ← Sampling data from the j-th neighbor of silo i
+            
+            θᵢ → ⱼ ← Train overseas expert model at j-th silo using Equation (intersilo)
+            
+            <span class="comment">// Collect overseas expert weights from j-th neighbor back to i-th silo</span>
+            ̂θᵢ → ⱼ ← θᵢ → ⱼ  
+            
+            EMD(θᵢ, ̂θᵢ → ⱼ) ← Compute Earth Mover's Distance using Equation (EMD)
+        <span class="keyword">end for</span>
+        
+        θᵢ(k+1) ← Compute 𝓛ⁱ_MD with Equation (distil_loss) and train i-th local model using Equation (cross_learn)
+    <span class="keyword">end for</span>
+<span class="keyword">end for</span>
+</pre>
+
+</body>
+				</div> 
+			</div>
+			
 		</div>
 	</section>
 	
