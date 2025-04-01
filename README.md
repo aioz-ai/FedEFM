@@ -1,11 +1,11 @@
-# FFM: Federated Foundation Model for Endovascular Intervention
+# FedEFM: Federated Endovascular Foundation Model with Unseen Data
 
-> This paper addresses the challenge of improving the performance of Endovascular Intervention, a medical domain-specific task characterized by limited data availability. In response, we propose a strategy to train a foundation model that can be fine-tuned for domain-specific tasks while ensuring the privacy of patients through decentralized federated learning. Our approach also focuses on mitigating the unseen data problem to achieve convergence in a decentralized federated learning setup. Once the foundation model is successfully trained, its weights serve as valuable initializations for downstream tasks proposed by participant hospital silos, ultimately enhancing task-specific performance. By combining the power of domain-specific fine-tuning and privacy-preserving decentralized federated learning, our approach contributes to advancements in medical imaging while addressing crucial ethical and legal considerations.
+> In endovascular surgery, the precise identification of catheters and guidewires in X-ray images is essential for reducing intervention risks. However, accurately segmenting catheter and guidewire structures is challenging due to the limited availability of labeled data. Foundation models offer a promising solution by enabling the collection of similar-domain data to train models whose weights can be fine-tuned for downstream tasks. Nonetheless, large-scale data collection for training is constrained by the necessity of maintaining patient privacy. This paper proposes a new method to train a foundation model in a decentralized federated learning setting for endovascular intervention. To ensure the feasibility of the training, we tackle the unseen data issue using differentiable Earth Mover's Distance within a knowledge distillation framework. Once trained, our foundation model's weights provide valuable initialization for downstream tasks, thereby enhancing task-specific performance. Intensive experiments show that our approach achieves new state-of-the-art results, contributing to advancements in endovascular intervention and robotic-assisted endovascular surgery, while addressing the critical issue of data sharing in the medical domain.
 
 
 ## Description
 
-Implementation of our paper [Federated Foundation Model for Endovascular Intervention](). 
+Implementation of our paper [FedEFM: Federated Endovascular Foundation Model with Unseen Data](). 
 
 ## Table of Contents
   * [Description](#description)
