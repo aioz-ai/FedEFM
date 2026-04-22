@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ### Dataset 
 
-We use the following dataset for training the foundation model: [VESSEL12](https://paperswithcode.com/dataset/vessel12), [DRIVE](https://drive.grand-challenge.org/), [SenNet](https://www.kaggle.com/competitions/blood-vessel-segmentation/data), [Medical Decathlon](http://medicaldecathlon.com/), and our private data obtained from hospitals and laboratories in the UK (UoL Endovascular Simulation and UoL Catheter & Guidewire). The dataset can be downloaded via the following [link](https://vision.aioz.io/f/1ade5bb38eb445b0bee0/?dl=1) 
+We use the following dataset for training the foundation model: [VESSEL12](https://paperswithcode.com/dataset/vessel12), [DRIVE](https://drive.grand-challenge.org/), [SenNet](https://www.kaggle.com/competitions/blood-vessel-segmentation/data), [Medical Decathlon](http://medicaldecathlon.com/), and our private data obtained from hospitals and laboratories in the UK (UoL Endovascular Simulation and UoL Catheter & Guidewire). The dataset can be downloaded via the following [link](https://huggingface.co/datasets/aiozai/FedEFM/tree/main/data) 
 
 After downloading, you will obtain the folder `med`, please put it in `data` folder. 
 ### Training 
@@ -65,13 +65,13 @@ pip install -r requirements.txt
 
 #### Dataset 
 
-We use the private dataset obtained from hospitals and laboratories in UK to evaluate downstream segmentation task. Please download the dataset [here](https://vision.aioz.io/f/ec5e0da6f18d4e938b1d/). 
+We use the private dataset obtained from hospitals and laboratories in UK to evaluate downstream segmentation task. Please download the dataset [here](https://huggingface.co/datasets/aiozai/FedEFM/blob/main/data/Downstream.zip). 
 
-After downloading, you will get the folder `data` contains phantom, animal, and simulation dataset. 
+After downloading, you will get the folder `data` contains phantom and animal dataset. 
 
 #### Checkpoint
 
-You can download the checkpoint of foundation model [here](https://vision.aioz.io/f/a1a996c76d8b4a8c9166/). After downloading, you will get the folder `checkpoints` that contains checkpoint for TransUNet ViT backbone.
+You can download the checkpoint of foundation model [here](https://huggingface.co/datasets/aiozai/FedEFM/tree/main/checkpoints/foundation_ckpts). After downloading, you will get the folder `checkpoints` that contains checkpoint for TransUNet ViT backbone.
 #### Training 
 
 Run the following command to train the model: 
